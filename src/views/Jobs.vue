@@ -1,0 +1,23 @@
+<template>
+    <h1>Jobs</h1>
+    <div v-for="job in jobs" :key="job.id"></div>
+    <h2> {{ job.title }} </h2>
+</template>
+
+<script>
+export default {
+    data() {
+        return {
+            jobs: [
+                { title: 'UX Designer', id: 1, details: 'lorem' },
+                { title: 'Web Developer', id: 1, details: 'lorem' },
+                { title: 'Vue Developer', id: 1, details: 'lorem' },
+            ]
+        }
+    }
+}
+</script>
+
+<style>
+
+</style>
